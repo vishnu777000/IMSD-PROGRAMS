@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Window Object Demo</title> 
+  <script> 
+    function showWindowInfo() { 
+     
+      document.getElementById("height").innerText = "Inner Height: " + 
+window.innerHeight + " px"; 
+      document.getElementById("width").innerText = "Inner Width: " + 
+window.innerWidth + " px"; 
+      document.getElementById("location").innerText = "Location: " + 
+window.location.href; 
+ 
+      
+      window.alert("This is an alert from window.alert()"); 
+    } 
+ 
+    function openNewWindow() { 
+      
+      window.open("https://www.example.com", "_blank"); 
+    } 
+ 
+    function confirmAction() { 
+    
+      let result = window.confirm("Do you want to continue?"); 
+      document.getElementById("confirmResult").innerText = result 
+        ? "You clicked OK" 
+        : "You clicked Cancel"; 
+    } 
+ 
+    function promptInput() { 
+   
+      let name = window.prompt("Enter your name:"); 
+      if (name) 
+        document.getElementById("promptResult").innerText = "Hello, " + name + "!"; 
+    } 
+  </script> 
+</head> 
+<body> 
+ 
+  <h2>Using Window Object Properties and Methods</h2> 
+ 
+  <button onclick="showWindowInfo()">Show Window Info</button><br><br> 
+  <button onclick="openNewWindow()">Open New Window</button><br><br> 
+  <button onclick="confirmAction()">Confirm Action</button><br><br> 
+  <button onclick="promptInput()">Prompt for Name</button><br><br> 
+ 
+  <p id="height"></p> 
+  <p id="width"></p> 
+  <p id="location"></p> 
+  <p id="confirmResult" style="color: red;"></p> 
+  <p id="promptResult" style="color: brown;"></p> 
+ 
+</body> 
+</html> 
