@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Fixed Flipped Background Example</title> 
+  <style> 
+    body { 
+      margin: 0; 
+      height: 200vh;  
+    } 
+    .background { 
+      position: fixed; 
+      top: 20%; 
+      left: 0; 
+      width: 100%; 
+      height: 200px; 
+      background-image:url('https://picsum.photos/id/1015/600/400'); 
+      background-repeat: no-repeat; 
+      background-size: cover; 
+      background-position: center; 
+      transform: rotate(-15deg);  
+      z-index: -1; 
+    } 
+    .content { 
+      padding: 50px; 
+      font-size: 20px; 
+    } 
+  </style> 
+</head> 
+<body> 
+  <div class="background"></div> 
+  <div class="content"> 
+    <h1>Scroll Down</h1> 
+    <p>This is an example page with a background image fixed halfway down and flipped 
+horizontally.</p> 
+    <p>Keep scrolling to see the background image stay in place.</p> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus velit 
+sit amet justo feugiat, vel cursus lorem tincidunt.</p> 
+  </div> 
+</body> 
+</html> 
