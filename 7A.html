@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Document Object Demo</title> 
+  <script> 
+    function showDocumentInfo() { 
+       
+      document.getElementById("title").innerText = "Title: " + document.title; 
+      document.getElementById("url").innerText = "URL: " + document.URL; 
+      document.getElementById("domain").innerText = "Domain: " + document.domain; 
+      document.getElementById("lastModified").innerText = "Last Modified: " + 
+document.lastModified; 
+ 
+     
+      document.getElementById("outputArea").style.color = "red"; 
+      
+    } 
+  </script> 
+</head> 
+<body> 
+<h2>Using Document Object Properties and Methods</h2> 
+<button onclick="showDocumentInfo()">Show Document Details</button> 
+<div id="outputArea"> 
+<p id="title"></p> 
+<p id="url"></p> 
+<p id="domain"></p> 
+<p id="lastModified"></p> 
+</div> 
+</body> 
+</html>
