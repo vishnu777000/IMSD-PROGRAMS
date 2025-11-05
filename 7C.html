@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Array Object Demo</title> 
+  <script> 
+    function showArrayOperations() { 
+     
+      let fruits = ["Bus", "Car", "Bike"]; 
+ 
+      
+      document.getElementById("original").innerText = "Original Array: " + fruits; 
+  
+      document.getElementById("length").innerText = "Length: " + fruits.length; 
+ 
+   
+      fruits.push("Train"); 
+ 
+    
+      let popped = fruits.pop(); 
+ 
+       
+      fruits.unshift("Truck"); 
+ 
+     
+      let shifted = fruits.shift(); 
+ 
+  
+      let index = fruits.indexOf("Bike"); 
+ 
+     
+      let joined = fruits.join(" | "); 
+ 
+     
+      document.getElementById("finalArray").innerText = "Final Array: " + fruits; 
+      document.getElementById("popped").innerText = "Popped Element: " + popped; 
+      document.getElementById("shifted").innerText = "Shifted Element: " + shifted; 
+      document.getElementById("index").innerText = "Index of Banana: " + index; 
+      document.getElementById("joined").innerText = "Joined Array: " + joined; 
+    } 
+  </script> 
+</head> 
+<body> 
+  <h2>Array Object Properties and Methods</h2> 
+  <button onclick="showArrayOperations()">Run Array Operations</button> 
+<p id="original"></p> 
+<p id="length"></p> 
+<p id="popped"></p> 
+<p id="shifted"></p> 
+<p id="index"></p> 
+<p id="joined"></p> 
+<p id="finalArray" style="font-weight: bold; color: red;"></p> 
+</body> 
+</html> 
